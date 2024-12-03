@@ -28,4 +28,29 @@ class ValidatorUtil {
     }
     return null;
   }
+
+  static String? validaorTitle(String? value){
+    if(value?.trim().isEmpty?? true){
+      return "상품명을 입력해주세요";
+    }
+    if(value!.length<2){
+      return "상품명은 2글자 이상이어야 합니다.";
+    }
+    return null;
+  }
+
+  static String? validaorPrice(String? value){
+    if(value?.trim().isEmpty?? true){
+      return "가격을 입력해주세요";
+    }
+    return null;
+  }
+
+  static String? validaorContent(String? value){
+    if(value?.trim().isEmpty?? true){
+      return "상품내용을 입력해주세요";
+    }
+    return null;
+  }
+  
 }

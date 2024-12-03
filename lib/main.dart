@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_market_app/ui/pages/chat_detail/chat_datail_page.dart';
 import 'package:flutter_market_app/ui/pages/home/home_page.dart';
 import 'package:flutter_market_app/ui/pages/join/join_page.dart';
 import 'package:flutter_market_app/ui/pages/welcome/welcome_page.dart';
@@ -85,8 +86,8 @@ class MyApp extends StatelessWidget {
           }),
         ),
       ),
-      //home: WelcomePage(),
-      home: HomePage(),
+      home: WelcomePage(),
+      //home: HomePage(),
     );
   }
 }
